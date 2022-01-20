@@ -1,19 +1,19 @@
 package mr.adkhambek.viper.ui.main
 
-import mr.adkhambek.viper.ui.NavigationDispatcher
+import com.github.terrakok.cicerone.Router
+import mr.adkhambek.viper.ui.Screens
 import javax.inject.Inject
 
 
 class HomeRouter @Inject constructor(
-    private val router: NavigationDispatcher
+    private val router: Router
 ) : HomeContract.Router {
 
     override suspend fun navigateToDetail() {
-        val direction = HomeFragmentDirections.toDetailFragment()
-        router.emit(direction)
+        router.navigateTo(Screens.Detail())
     }
 
     override suspend fun finish() {
-        router.back()
+        router.exit()
     }
 }
