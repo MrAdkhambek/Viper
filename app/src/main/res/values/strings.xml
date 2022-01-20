@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Viper</string>
+    <string name="navigate_to_details">Navigate to details</string>
+    <string name="finish">Finish</string>
+</resources>
