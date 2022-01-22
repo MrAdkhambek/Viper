@@ -1,6 +1,6 @@
 @file:Suppress("FunctionName")
 
-package mr.adkhambek.detailt
+package mr.adkhambek.detail
 
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 

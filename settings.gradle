@@ -8,3 +8,6 @@ dependencyResolutionManagement {
 }
 rootProject.name = "Viper"
 include ':app'
+include ':future:home'
+include ':future:detail'
+include ':future:nagation_stub'

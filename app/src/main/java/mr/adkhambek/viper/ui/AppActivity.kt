@@ -12,6 +12,7 @@ import com.github.terrakok.cicerone.Replace
 import com.github.terrakok.cicerone.androidx.AppNavigator
 import com.github.terrakok.cicerone.androidx.FragmentScreen
 import dagger.hilt.android.AndroidEntryPoint
+import mr.adkhambek.home.HomeScreens
 import mr.adkhambek.viper.R
 import javax.inject.Inject
 
@@ -47,7 +48,7 @@ class AppActivity : AppCompatActivity(R.layout.app_activity) {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         if (savedInstanceState == null) {
-            navigator.applyCommands(arrayOf<Command>(Replace(Screens.Home())))
+            navigator.applyCommands(arrayOf<Command>(Replace(HomeScreens.HomeScreen())))
         }
     }
 
