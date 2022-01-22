@@ -1,18 +1,18 @@
 package mr.adkhambek.home
 
-import com.github.terrakok.cicerone.Router
-import mr.adkhambek.detail.DetailScreens
+import mr.adkhambek.viper.home.R
+import mr.adkhambek.viper.navigation.NavigationDispatcher
 import javax.inject.Inject
 
 internal class HomeRouter @Inject constructor(
-    private val router: Router
+    private val router: NavigationDispatcher
 ) : HomeContract.Router {
 
     override suspend fun navigateToDetail() {
-        router.navigateTo(DetailScreens.DetailScreens())
+        router.emit(R.id.detailFragment)
     }
 
     override suspend fun finish() {
-        router.exit()
+        router.finishActivity()
     }
 }

@@ -33,5 +33,6 @@ android {
 
 
 dependencies {
-    compileOnly 'com.github.terrakok:cicerone:7.1'
+    compileOnly 'androidx.navigation:navigation-fragment-ktx:2.3.5'
+    compileOnly 'androidx.navigation:navigation-ui-ktx:2.3.5'
 }
