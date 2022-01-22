@@ -9,7 +9,7 @@ import mr.adkhambek.detail.DetailRouter
 
 
 @[Module InstallIn(ActivityRetainedComponent::class)]
-interface NavigationBindModule {
+internal interface NavigationBindModule {
 
     @[Binds]
     fun bindDetailRouter(binder: DetailRouter): DetailContract.Router

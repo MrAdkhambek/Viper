@@ -10,7 +10,7 @@ import mr.adkhambek.viper.home.R
 import mr.adkhambek.viper.home.databinding.MainFragmentBinding
 
 @AndroidEntryPoint
-class HomeFragment : Fragment(R.layout.main_fragment) {
+internal class HomeFragment : Fragment(R.layout.main_fragment) {
 
     private val vm: HomeViewModel by viewModels()
     private val vb: MainFragmentBinding by viewBinding(MainFragmentBinding::bind)

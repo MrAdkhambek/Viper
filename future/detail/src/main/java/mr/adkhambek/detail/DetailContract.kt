@@ -1,6 +1,6 @@
 package mr.adkhambek.detail
 
-interface DetailContract {
+internal interface DetailContract {
 
     interface ViewModel {
         fun onBackPressed()

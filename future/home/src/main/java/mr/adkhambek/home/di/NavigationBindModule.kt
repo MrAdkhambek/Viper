@@ -9,7 +9,7 @@ import mr.adkhambek.home.HomeRouter
 
 
 @[Module InstallIn(ActivityRetainedComponent::class)]
-interface NavigationBindModule {
+internal interface NavigationBindModule {
 
     @[Binds]
     fun bindHomeRouter(binder: HomeRouter): HomeContract.Router

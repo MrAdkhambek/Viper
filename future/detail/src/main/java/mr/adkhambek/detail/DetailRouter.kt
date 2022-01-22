@@ -2,8 +2,7 @@ package mr.adkhambek.detail
 
 import com.github.terrakok.cicerone.Router
 
-
-class DetailRouter @javax.inject.Inject constructor(
+internal class DetailRouter @javax.inject.Inject constructor(
     private val router: Router
 ) : DetailContract.Router {
 

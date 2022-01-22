@@ -1,6 +1,6 @@
 package mr.adkhambek.home
 
-interface HomeContract {
+internal interface HomeContract {
 
     interface ViewModel {
         fun onClickDetail()

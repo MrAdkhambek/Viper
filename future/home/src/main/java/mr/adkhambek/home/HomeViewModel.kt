@@ -7,7 +7,7 @@ import kotlinx.coroutines.launch
 import javax.inject.Inject
 
 @HiltViewModel
-class HomeViewModel @Inject constructor(
+internal class HomeViewModel @Inject constructor(
     private val router: HomeContract.Router
 ) : ViewModel(), HomeContract.ViewModel {
 

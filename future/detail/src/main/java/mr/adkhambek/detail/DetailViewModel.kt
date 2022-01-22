@@ -4,9 +4,11 @@ import androidx.lifecycle.ViewModel
 import androidx.lifecycle.viewModelScope
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.launch
+import javax.inject.Inject
+
 
 @HiltViewModel
-class DetailViewModel @javax.inject.Inject constructor(
+internal class DetailViewModel @Inject constructor(
     private val router: DetailContract.Router
 ) : ViewModel(), DetailContract.ViewModel {
 

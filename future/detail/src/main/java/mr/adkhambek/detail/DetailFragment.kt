@@ -10,7 +10,7 @@ import mr.adkhambek.detail.databinding.DetailFragmentBinding
 
 
 @AndroidEntryPoint
-class DetailFragment : Fragment(R.layout.detail_fragment) {
+internal class DetailFragment : Fragment(R.layout.detail_fragment) {
 
     private val vm: DetailViewModel by viewModels()
     private val vb: DetailFragmentBinding by viewBinding(DetailFragmentBinding::bind)
